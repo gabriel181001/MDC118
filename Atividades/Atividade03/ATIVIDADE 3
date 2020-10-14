@@ -1,0 +1,65 @@
+FATORIAL
+
+#include <stdio.h>
+
+int main()
+int fat, n;
+printf("Insira um valor para o qual deseja calcular seu fatorial: ");
+scanf("%d", &n);
+for(fat = 1; n > 1; n = n - 1)
+fat = fat * n;
+printf("\nFatorial calculado: %d", fat);
+return 0;
+
+MULTIPLOS
+
+#include <stdio.h>
+
+int main(void)
+{
+int i,n;
+
+printf("Informe um numero inteiro: ");
+scanf ("%i",&n);
+
+for (i=0;i<=n;i++)
+{
+    if(i%3==0)
+    {
+    printf("\n %i -numero multiplo de 3", i);
+    }
+}
+}
+
+SERIE FIBONACCI
+
+#include "stdio.h"
+ 
+
+void main()
+{
+  
+  int a, b, auxiliar, i, n;
+ 
+  
+  a = 0;
+  b = 1;
+ 
+  
+  printf("Digite o número: ");
+  
+  scanf("%d", &n);
+  printf("Série Fibonacci:\n");
+  printf("%d\n", b);
+ 
+ 
+  for(i = 0; i < n; i++)
+  {
+    auxiliar = a + b;
+    a = b;
+    b = auxiliar;
+ 
+    
+    printf("%d\n", auxiliar);
+  }
+}
