@@ -1,0 +1,57 @@
+ATIVIDADE PERIMENTRO
+
+#include <stdio.h>
+
+
+int main(void){
+
+    float r; /* raio /
+    float p; / perimetro /
+    float pi = 3.1416; / valor do pi para efetuar a  operacao */
+
+    printf ("Informar o valor do raio: ");
+    scanf ("%f" , &r);
+
+    p = 2 * pi * r;
+
+    printf("Perimetro: %.2f", p);
+
+    return 0;
+}
+
+ATIVIDADE CONVERSOR
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+   int tempo, horas, horas_seg, minutos, segundos;
+   horas_seg=3600;//horas para segundos
+   printf("Entre com o número de segundos: ");
+   scanf("%d", &tempo);
+   horas = (tempo/horas_seg); //resultado  hora
+   minutos = (tempo -(horas_seg*horas))/60;
+   segundos = (tempo -(horas_seg*horas)-(minutos*60));
+   printf("%dh : %dm :%ds \n",horas,minutos,segundos);
+   
+   return 0;
+}
+
+ATIVIDADE CONVERSOR GIGABYTES
+
+#include <stdio.h>
+
+int main(void){
+
+    /* 1 gb = 1024^3 bytes /
+    float g; / gigabyte /
+    float b; / bytes */
+
+    printf ("Informar a quantidade de GB: ");
+    scanf ("%f" , &g);
+
+    b = g * 1073741824;
+
+    printf ("Bytes: %.f", b);
+
+    return 0;
+}
